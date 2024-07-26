@@ -436,6 +436,73 @@
         }
 
 
+
+
+footer {
+            background: linear-gradient(45deg, red, blue, pink);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #7f8c8d;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+
+
+
+
+    
+
 </style>
 <body>
     <div class="container2" >
@@ -553,7 +620,14 @@
             </div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShswRUYjnUh_AimD3NXAsOQP7ltXhCAEopnQ&s" alt="Lack of Complexity">
         </div>
+
         
+<footer style="background-color: #2c3e50; color: white; padding: 20px 0; text-align: center;">
+    
+    <div style="border-top: 1px solid #7f8c8d; margin-top: 20px; padding-top: 10px;">
+        <p>&copy; 2024 All rights reserved.</p>
+    </div>
+</footer>
     <script>
         function scrollToClass(className) {
             var element = document.querySelector('.' + className);
@@ -644,6 +718,7 @@
     </script>
 </body>
 </html>
+
 
 
 
