@@ -360,6 +360,12 @@
   border: none;
   border-bottom: 10px solid #blue;
   outline: none;
+             background: linear-gradient(45deg, red, blue, pink);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
 
        
@@ -520,7 +526,7 @@ footer {
             <a>Check Your Password</a>
             <h3>Think your password is unbreakable? Put it to the test and see!</h3>
             <div class="inputWrap">
-                <input type="password" placeholder="Password" id="yourPassword" style="background-color: #ffffff; color:black">
+                <input type="password" placeholder="Password" id="yourPassword" >
             </div>
             <div class="strengthMeter"></div>
             <div class="strengthText">Weak Password </div>
