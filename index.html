@@ -699,7 +699,7 @@
                         valid = /[@#$%^&*()\-+]/.test(password);
                         break;
                     case 'adjacent':
-                        valid = !/(.)\1/.test(password);
+                        valid = !/(.)\1\1/.test(password);
                         break;
                 }
                 if (valid) {
